@@ -1,0 +1,24 @@
+div#sideNav > div.row > div > .box {
+    margin:5px 0px 5px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 100%;
+}
+
+.smallBox {
+    background-color: red;
+    margin-left:10px;
+}
+
+#editUpdate {
+    position: absolute;
+    z-index: 90;
+    top:100%;
+    border: 1px solid black;
+}
+
+#editUpdate span {
+    font-size:1.5rem;
+}

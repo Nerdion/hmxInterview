@@ -1,0 +1,34 @@
+#myGrid {
+    display: grid;
+    padding:100px;
+    grid-template-columns: auto auto;
+}
+
+.col {
+    text-align: center;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+
+#toggleAnimation {
+    background-color: red;
+    color:white;
+    border:0;
+    padding:1em;
+}
+
+#toggleAnimation:hover {
+    background-color: white;
+    color:red;
+    border:1px solid black;
+}

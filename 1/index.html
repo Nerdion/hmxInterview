@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div id="buttonsNav" class="col">
+                    <h5>Div 1 colors</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <button data-button="1" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
+                        </div>
+                        <div style="background-color: #ff0000;" data-box="1" class="col-1 smallBox"></div>
+                    </div>
+                    <hr>
+                    <h5>Div 2 colors</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <button data-button="2" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
+                        </div>
+                        <div style="background-color:#0000ff;" data-box="2" class="col-1 smallBox"></div>
+                    </div>
+                    <hr>
+                    <h5>Div 3 colors</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <button data-button="3" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
+                        </div>
+                        <div style="background-color: #008000;" data-box="3" class="col-1 smallBox"></div>
+                    </div>
+                    <hr>
+                    <h5>Div 4 colors</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <button data-button="4" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
+                        </div>
+                        <div style="background-color: yellow;" data-box="4" class="col-1 smallBox"></div>
+                    </div>
+                    <hr>
+                </div>
+                <div id="sideNav" class="col">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="box" data-color="1"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box" data-color="2"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box" data-color="3"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="box" data-color="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addModalLabel">Select Color</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <input id="newColor" class="form-control" type="color" />
+              <input id="whichNewColor" hidden>
+              <input id="isItEditing" hidden>
+              <br>   <br>
+              <input type="button" id="saveNewColor" value="Save"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS-->
+    <script src="index.js"></script>
+</body>
+</html>
