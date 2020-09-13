@@ -13,13 +13,12 @@
     <section>
         <div class="container my-5">
             <div class="row">
-                <div id="buttonsNav" class="col">
+                <div id="buttonsNav" class="col-md-6 col-12">
                     <h5>Div 1 colors</h5>
                     <div class="row">
                         <div class="col-1">
                             <button data-button="1" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
                         </div>
-                        <div style="background-color: #ff0000;" data-box="1" class="col-1 smallBox"></div>
                     </div>
                     <hr>
                     <h5>Div 2 colors</h5>
@@ -27,7 +26,6 @@
                         <div class="col-1">
                             <button data-button="2" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
                         </div>
-                        <div style="background-color:#0000ff;" data-box="2" class="col-1 smallBox"></div>
                     </div>
                     <hr>
                     <h5>Div 3 colors</h5>
@@ -35,7 +33,6 @@
                         <div class="col-1">
                             <button data-button="3" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
                         </div>
-                        <div style="background-color: #008000;" data-box="3" class="col-1 smallBox"></div>
                     </div>
                     <hr>
                     <h5>Div 4 colors</h5>
@@ -43,11 +40,10 @@
                         <div class="col-1">
                             <button data-button="4" class="btn btn-dark fa fa-plus modalClassButton" data-toggle="modal" data-target="#addModal"></button>
                         </div>
-                        <div style="background-color: yellow;" data-box="4" class="col-1 smallBox"></div>
                     </div>
                     <hr>
                 </div>
-                <div id="sideNav" class="col">
+                <div id="sideNav" class="col-md-6 col-12">
                     <div class="row">
                         <div class="col-6">
                             <div class="box" data-color="1"></div>
@@ -67,6 +63,35 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row my-2">
+                <div class="col">
+                        <button style="background-color: red;" class="btn p-3 mr-1"></button>
+                        Click on this box to <i class="text-primary">change</i> the color
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col">
+                    <button class="btn btn-dark fa fa-plus mr-1"></button>
+                    Is used to add a new color
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col">
+                    <button class="btn fa fa-edit mr-1"></button>
+                    Is used to edit a color when you hover your mouse on it
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col">
+                    <button class="btn fa fa-trash text-danger mr-1"></button>
+                    Is used to <i class="text-danger">delete</i>  a color when you hover your mouse on it
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -81,7 +106,7 @@
               <input id="whichNewColor" hidden>
               <input id="isItEditing" hidden>
               <br>   <br>
-              <input type="button" id="saveNewColor" value="Save"/>
+              <input class="btn btn-dark" type="button" id="saveNewColor" value="Save"/>
             </div>
           </div>
         </div>

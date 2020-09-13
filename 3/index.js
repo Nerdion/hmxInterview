@@ -1,4 +1,7 @@
-'use strict';
+/*
+This program is written in NodeJS
+Use - "node index" inorder to run this program
+*/
 
 //Constant bills defined by John
 const bills = [124,48,268]
